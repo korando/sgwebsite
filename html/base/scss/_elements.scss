@@ -649,6 +649,7 @@ svg.logo path {
 							@include breakpoint(768px) {
 								  padding: 25px 25px;
 							}
+
 							@include between-breakpoints(1280px,1439px) {
 									padding: 15px 30px;
 							}
@@ -665,6 +666,9 @@ svg.logo path {
 	                @include breakpoint(768px) {
 	                	height: 35px;
 	                }
+									@include between-breakpoints(769px,1279px) {
+										height: 36px;
+									}
 									@include between-breakpoints(1280px,1439px) {
 	                	height: 35px;
 	                }
@@ -676,6 +680,15 @@ svg.logo path {
 									}
 	            }
 	        }
+					&.row-logo-1 {
+						li {
+								@include between-breakpoints(769px,1279px) {
+									width: 100%;
+									margin-left: 62px;
+									padding: 13px;
+							}
+						}
+					}
 	        &.row-logo-2 {
 	        	li {
 	        		width: 100%;
@@ -711,6 +724,9 @@ svg.logo path {
 										@include breakpoint(768px) {
 		                	height: 55px;
 		                }
+										@include between-breakpoints(769px,1279px) {
+											height: 60px;
+										}
 										@include between-breakpoints(1280px,1439px) {
 		                	height: 35px;
 		                }
@@ -1393,6 +1409,7 @@ svg.logo path {
 				width: 45%;
 				float: left;
 				// margin-left: 17px;
+				text-align: left;
 				list-style: none;
 				background: url(../images/bullet.png) 0 10px no-repeat;
 				padding-left: 20px;

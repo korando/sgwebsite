@@ -628,6 +628,9 @@ svg.logo path {
           @media only screen and (max-width: 768px) {
             .box-square .logo-box-hidden ul li img {
               height: 35px; } }
+          @media (min-width: 769px) and (max-width: 1279px) {
+            .box-square .logo-box-hidden ul li img {
+              height: 36px; } }
           @media (min-width: 1280px) and (max-width: 1439px) {
             .box-square .logo-box-hidden ul li img {
               height: 35px; } }
@@ -637,6 +640,11 @@ svg.logo path {
           @media (min-width: 1680px) and (max-width: 2000px) {
             .box-square .logo-box-hidden ul li img {
               height: 55px; } }
+      @media (min-width: 769px) and (max-width: 1279px) {
+        .box-square .logo-box-hidden ul.row-logo-1 li {
+          width: 100%;
+          margin-left: 62px;
+          padding: 13px; } }
       .box-square .logo-box-hidden ul.row-logo-2 li {
         width: 100%;
         text-align: center; }
@@ -665,6 +673,9 @@ svg.logo path {
           @media only screen and (max-width: 768px) {
             .box-square .logo-box-hidden ul.row-logo-3 li img {
               height: 55px; } }
+          @media (min-width: 769px) and (max-width: 1279px) {
+            .box-square .logo-box-hidden ul.row-logo-3 li img {
+              height: 60px; } }
           @media (min-width: 1280px) and (max-width: 1439px) {
             .box-square .logo-box-hidden ul.row-logo-3 li img {
               height: 35px; } }
@@ -1215,6 +1226,7 @@ svg.logo path {
         margin-bottom: 0.9375rem;
         width: 45%;
         float: left;
+        text-align: left;
         list-style: none;
         background: url(../images/bullet.png) 0 10px no-repeat;
         padding-left: 20px; }

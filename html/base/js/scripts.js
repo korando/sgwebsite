@@ -24,7 +24,13 @@ $(function() {
     	// if Portrait and is iPad
       if (is_iPad==true) {
         var viewport = $('meta[name="viewport"]');
-        viewport.attr("content", "width=1024, initial-scale=0.5");
+        viewport.attr("content", "width=1024");
+        $('.header-welcome-home').css('min-height', '65vh');
+        $('.intro').css('height', '65vh');
+        $('.fit-height').css('height', '65vh');
+        $('.scrolldown').hide();
+
+
       }
     }
 
@@ -114,7 +120,6 @@ jQuery(document).ready(function($) {
     }, {
         offset: '40%'
     });
-
 
 
     if ($('.career-wrapper').length && $(window).width() > 970) {
@@ -412,14 +417,14 @@ $(window).load(function() {
         return false;
     });
 
-    if ($('.box-square').length) {
-        var highestBox = 0;
-        $('.box-square .content', this).each(function() {
-
-            if ($(this).height() > highestBox) {
-                highestBox = $(this).height();
-            }
-        });
-        $('.box-square .content', this).height(highestBox);
-    };
+    // if ($('.box-square').length) {
+    //     var highestBox = 0;
+    //     $('.box-square .content', this).each(function() {
+    //
+    //         if ($(this).height() > highestBox) {
+    //             highestBox = $(this).height();
+    //         }
+    //     });
+    //     $('.box-square .content', this).height(highestBox);
+    // };
 });
